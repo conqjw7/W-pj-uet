@@ -6,6 +6,9 @@ gameloop dùng biến gamestate để duy trì event, event có hãm fps và tro
 
 event sử dụng gameplay là 1 bool khác để đưa về màn hình gameover
 
+em tự đánh giá là đc 7
+
+
 có tham khảo từ về input bay
 
 
