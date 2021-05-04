@@ -1,18 +1,25 @@
 #include <iostream>
-#include <SDL.h>
-#include <SDL_image.h>
-
-#include "window.h"
-#include "variables.h"
-
+#include "game.h"
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-    initSDL(screen,renderer);
+    GameLoop g;
+    double ini;
+	double fin = 0;
+	int fps =60;
+    g.initSDL();
 
-    waitUntilKeyPressed();
-    quitSDL(screen, renderer);
-
+    do {
+        g.event();
+        ini = SDL_GetTicks();
+        if (ini - fin < 1000/fps)
+		{
+			SDL_Delay(1000/fps - (ini - fin));
+		}
+		fin = ini;
+    }
+    while (g.GetGameState());
+    g.quitSDL();
     return 0;
 }

@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1620067292 source:c:\users\1\documents\g\pj game\flappybird\game.cpp
+	"game.h"
+
+1620065125 source:c:\users\1\documents\g\pj game\flappybird\main.cpp
+	<iostream>
+	"game.h"
+
+1620066479 c:\users\1\documents\g\pj game\flappybird\game.h
+	<iostream>
+	<vector>
+	<SDL.h>
+	<SDL_mixer.h>
+	"bird.h"
+	"tube.h"
+	"load.h"
+
+1620036206 source:c:\users\1\documents\g\pj game\flappybird\load.cpp
+	"load.h"
+
+1620042507 c:\users\1\documents\g\pj game\flappybird\load.h
+	"SDL_image.h"
+	"string"
+
+1620116506 source:c:\users\1\documents\g\pj game\flappybird\bird.cpp
+	"bird.h"
+
+1620116506 c:\users\1\documents\g\pj game\flappybird\bird.h
+	"load.h"
+
+1619281611 source:c:\users\1\documents\g\pj game\flappybird\object.cpp
+
+1620057374 source:c:\users\1\documents\g\pj game\flappybird\tube.cpp
+	"tube.h"
+	"game.h"
+
+1620056829 c:\users\1\documents\g\pj game\flappybird\tube.h
+	"load.h"
+
